@@ -1,0 +1,106 @@
+Q26. What is a string? How can we declare string in Python?
+Strings are Kind of arrays which are declared in single doubleor tripple quotes. Ex -> a = 'Prashant Goel'
+
+Q27. How can we access the string using its index?
+By specifying the index number in square brackets. Ex -> print(a[1]) ----> This will give output 'r'
+
+Q28. Write a code to get the desired output of the following
+
+string = "Big Data iNeuron"
+desired_output = "iNeuron"
+
+print(string[-7:])
+
+Q29. Write a code to get the desired output of the following
+
+string = "Big Data iNeuron"
+desired_output = "norueNi"
+
+print(string[:-8:-1])
+
+Q30. Resverse the string given in the above question.
+print(string[::-1])
+
+Q31. How can you delete entire string at once?
+Using del keyword. Ex -> del string
+
+Q32. What is escape sequence?
+An escape sequence is a sequence of characters that, when used inside a character or string, does not represent itself but is converted into another character or series of characters.  Ex-> print('Who's this?') will give syntax error so we can use --> print('Who\'s this?')
+
+Q33. How can you print the below string?
+
+'iNeuron's Big Data Course'
+
+print('iNeuron\'s Big Data Course')
+
+Q34. What is a list in Python?
+Lists are used to store multiple items in a single variable. 
+
+Q35. How can you create a list in Python?
+These are created using square brackets. 
+Ex -> list1 = ["Prashant","Shashank","Vishal"]
+list2 = [1,2,3]
+
+Q36. How can we access the elements in a list?
+We can access them by referring to the index number.
+Ex -> print(list1[1])
+
+Q37. Write a code to access the word "iNeuron" from the given list.
+
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+print(lst[4][2])
+
+Q38. Take a list as an input from the user and find the length of the list.
+lst = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele)
+print(len(lst))
+
+Q39. Add the word "Big" in the 3rd index of the given list.
+
+lst = ["Welcome", "to", "Data", "course"]
+lst.insert(2,"Big")
+
+Q40. What is a tuple? How is it different from list?
+Tuples are also used to store multiple items in a single variable but it is not mutable wheras lists are mutable.
+
+Q41. How can you create a tuple in Python?
+Tuples are written with round brackets.
+Ex-> tpl = ("Prashant","Shashank","Vishal")
+
+Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+Not possible since it is a property of tuple that it is not mutable.
+
+Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+Yes. ex-> 
+tp1=(1,2) 
+tp2=(3,4)
+tp3=tp1+tp2
+
+Q44. Take a tuple as an input and print the count of elements in it.
+tpl4 = tuple(input("Enter : ").split())
+leng = len(tpl4)
+print(leng)
+
+Q45. What are sets in Python?
+A set is a collection which is unordered, unchangeable*, and unindexed.
+
+Q46. How can you create a set?
+Sets are written with curly brackets.
+set1 = {"Prashant","Shashank","Vishal"}
+
+Q47. Create a set and add "iNeuron" in your set.
+set1.add("iNeuron")
+
+Q48. Try to add multiple values using add() function.
+Gave error.
+
+Q49. How is update() different from add()?
+To add items from another set into the current set, we use the update() method.
+
+Q50. What is clear() in sets?
+The clear() method empties the set.
+
+
