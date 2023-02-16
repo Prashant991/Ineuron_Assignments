@@ -103,4 +103,93 @@ To add items from another set into the current set, we use the update() method.
 Q50. What is clear() in sets?
 The clear() method empties the set.
 
+Q51. What is frozen set?
+It creates an immutable Set object from an iterable. It is a built-in Python function. As it is a set object therefore we cannot have duplicate values in the frozenset.
+
+Q52. How is frozen set different from set?
+Set is mutable and hashable whereas Frozenset is not.And there are very limited functions we can use with frozenset.
+
+Q53. What is union() in sets? Explain via code.
+Union of two given sets is the set which contains all the elements of both the sets.
+Ex -> 
+A = {2, 4, 5, 6}
+B = {4, 6, 7, 8}
+print("A U B:", A.union(B))
+
+Q54. What is intersection() in sets? Explain via code.
+The intersection of two given sets is the largest set, which contains all the elements that are common to both sets.
+Ex->
+s1 = {1, 2, 3}
+s2 = {2, 3}
+print(s1.intersection(s2))
+
+Q55. What is dictionary ibn Python?
+Dictionaries are used to store data values in key:value pairs.
+A dictionary is a collection which is ordered, changeable and do not allow duplicates.
+Dictionaries are written with curly brackets.
+
+Q56. How is dictionary different from all other data structures.
+It stores values in key:value pairs which no other data structure in python does.
+
+Q57. How can we delare a dictionary in Python?
+We can create a dictionary using the dict() function.
+
+Q58. What will the output of the following?
+var = {}
+print(type(var))
+
+class 'dict'
+
+Q59. How can we add an element in a dictionary?
+tdict["car"] = "Aventador"
+This will add key as car and its value as Urus in an existing dictionary 'dict'.
+
+Q60. Create a dictionary and access all the values in that dictionary.
+dict1 = {
+  "brand": "Lamborghini",
+  "model": "Urus",
+  "year": 2020
+}
+print(dict1)
+
+Q61. Create a nested dictionary and access all the element in the inner dictionary.
+dict1 = {
+  "brand": "Lamborghini",
+  "model": "Urus",
+  "year": 2020,
+  "dict2" : {"Name":"Prashant","age":23}
+}
+
+print(dict1["dict2"])
+
+
+Q62. What is the use of get() function?
+The get() method returns the value of the item with the specified key.
+
+Q63. What is the use of items() function?
+The items() method returns a view object. The view object contains the key-value pairs of the dictionary, as tuples in a list.
+The view object will reflect any changes done to the dictionary.
+
+Q64. What is the use of pop() function?
+The pop() method removes the item with the specified key name.
+
+Q65. What is the use of popitems() function?
+The popitem() method removes the last inserted item.
+
+Q66. What is the use of keys() function?
+The keys() method will return a list of all the keys in the dictionary.
+
+Q67. What is the use of values() function?
+The values() method will return a list of all the values in the dictionary.
+
+Q68. What are loops in Python?
+Loop statements allows us to execute a statement or group of statements multiple times.
+
+Q69. How many type of loop are there in Python?
+for loop and while loop
+
+Q70. What is the difference between for and while loops?
+For loop allows a programmer to execute a sequence of statements several times, it abbreviates the code which helps to manage loop variables.
+While loop allows a programmer to repeat a single statement or a group of statements for the TRUE condition. It verifies the condition before executing the loop.
+
 
