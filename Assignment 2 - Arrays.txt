@@ -1,0 +1,111 @@
+1.->
+ 
+ Code in Python -> 
+ 
+class Solution:
+    def arrayPairSum(self, nums: List[int]) -> int:
+        return sum(sorted(nums)[::2])
+			
+			
+----------------------
+
+2.->
+
+Code in Python ->
+class Solution:
+    def distributeCandies(self, candyType: List[int]) -> int:
+        return min(len(candyType) >> 1, len(set(candyType)))
+		
+
+------------------------------
+		
+3.->
+
+Code in Python ->
+class Solution:
+    def findLHS(self, nums: List[int]) -> int:
+        counter = Counter(nums)
+        ans = 0
+        for num in nums:
+            if num + 1 in counter:
+                ans = max(ans, counter[num] + counter[num + 1])
+        return ans
+----------------------		
+		
+4.->
+
+Code in Python ->
+class Solution:
+    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+        flowerbed = [0] + flowerbed + [0]
+        for i in range(1, len(flowerbed) - 1):
+            if sum(flowerbed[i - 1 : i + 2]) == 0:
+                flowerbed[i] = 1
+                n -= 1
+        return n <= 0
+	
+
+-----------------
+
+5.->
+
+Code in Python ->
+class Solution:
+    def maximumProduct(self, nums: List[int]) -> int:
+        nums.sort()
+        a = nums[-1] * nums[-2] * nums[-3]
+        b = nums[-1] * nums[0] * nums[1]
+        return max(a, b)
+			
+-------------------
+
+6.->
+
+Code in Python ->
+def search(nums, target):
+    n = len(nums)
+    l = 0
+    h = n-1
+    p = 0
+    while l <= h:
+        p = l + (h-l)//2
+        if nums[p] == target:
+            return p
+        if target < nums[p]:
+            h = p-1
+        else:
+            l = p+1
+    return -1
+		
+		
+---------------------------
+
+7.->
+
+Code in Python ->
+class Solution:
+    def isMonotonic(self, nums: List[int]) -> bool:
+        isIncr = isDecr = False
+        for i, v in enumerate(nums[1:]):
+            if v < nums[i]:
+                isIncr = True
+            elif v > nums[i]:
+                isDecr = True
+            if isIncr and isDecr:
+                return False
+        return True
+class Solution:
+    def isMonotonic(self, nums: List[int]) -> bool:
+        incr = all(a <= b for a, b in pairwise(nums))
+        decr = all(a >= b for a, b in pairwise(nums))
+        return incr or decr
+				
+----------------------
+				
+8.->
+
+Code in Python ->
+class Solution:
+    def smallestRangeI(self, nums: List[int], k: int) -> int:
+        mx, mi = max(nums), min(nums)
+        return max(0, mx - mi - k * 2)
